@@ -1,1 +1,257 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA na Escola - Técnicas Computacionais</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Estilos Gerais */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Navegação */
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav li {
+            padding: 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #9d50bb;
+        }
+        
+        /* Conteúdo Principal */
+        main {
+            padding: 2rem 0;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        section h2 {
+            color: #6e48aa;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        /* Cards */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .card h3 {
+            color: #9d50bb;
+            margin-bottom: 1rem;
+        }
+        
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        footer p {
+            margin-bottom: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #9d50bb;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Inteligência Artificial na Educação</h1>
+            <p>Refletindo sobre as técnicas computacionais nas escolas</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#desafios">Desafios</a></li>
+            <li><a href="#ferramentas">Ferramentas</a></li>
+            <li><a href="#reflexao">Reflexão</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section id="introducao">
+            <h2>Introdução à IA na Escola</h2>
+            <p>A inteligência artificial está transformando diversos setores da sociedade, e a educação não fica de fora. Nas escolas, as técnicas computacionais estão sendo aplicadas para personalizar o aprendizado, automatizar tarefas administrativas e criar novas formas de interação entre alunos e professores.</p>
+            <p>Este projeto visa refletir sobre como essas tecnologias podem ser implementadas de forma ética e eficaz no ambiente escolar, potencializando o aprendizado sem perder de vista o aspecto humano da educação.</p>
+        </section>
+        
+        <section id="beneficios">
+            <h2>Benefícios da IA na Educação</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Aprendizado Personalizado</h3>
+                    <p>Sistemas adaptativos podem ajustar o conteúdo e ritmo de acordo com as necessidades individuais de cada aluno.</p>
+                </div>
+                <div class="card">
+                    <h3>Feedback Imediato</h3>
+                    <p>Ferramentas de IA podem fornecer correções e sugestões em tempo real, acelerando o processo de aprendizado.</p>
+                </div>
+                <div class="card">
+                    <h3>Automação de Tarefas</h3>
+                    <p>Correção automática de exercícios e organização de materiais liberam tempo para os professores se dedicarem ao ensino.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="desafios">
+            <h2>Desafios e Preocupações</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Privacidade de Dados</h3>
+                    <p>O uso de dados dos alunos precisa ser feito com transparência e respeito à legislação de proteção de dados.</p>
+                </div>
+                <div class="card">
+                    <h3>Equidade de Acesso</h3>
+                    <p>É necessário garantir que todas as escolas tenham acesso a essas tecnologias para evitar aumento da desigualdade.</p>
+                </div>
+                <div class="card">
+                    <h3>Papel do Professor</h3>
+                    <p>A IA deve complementar, não substituir, o papel fundamental dos educadores no processo de ensino.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ferramentas">
+            <h2>Ferramentas de IA para Escolas</h2>
+            <ul>
+                <li>Plataformas de aprendizado adaptativo (como Khan Academy, Duolingo)</li>
+                <li>Chatbots educacionais para tirar dúvidas</li>
+                <li>Ferramentas de criação de conteúdo automatizado</li>
+                <li>Sistemas de análise de desempenho dos alunos</li>
+                <li>Ferramentas de acessibilidade (tradução, legendagem, descrição de imagens)</li>
+            </ul>
+        </section>
+        
+        <section id="reflexao">
+            <h2>Reflexão Crítica</h2>
+            <p>A implementação de técnicas computacionais na educação deve ser feita com cuidado, considerando não apenas a eficiência, mas também os aspectos éticos e sociais. Algumas questões importantes:</p>
+            <ul>
+                <li>Como garantir que a IA não reproduza vieses existentes na educação?</li>
+                <li>Qual o equilíbrio ideal entre tecnologia e interação humana?</li>
+                <li>Como preparar os professores para trabalhar com essas novas ferramentas?</li>
+                <li>Que habilidades os alunos precisam desenvolver para um mundo com IA?</li>
+            </ul>
+            <p>A escola tem o papel crucial de formar cidadãos críticos e conscientes, capazes de usar a tecnologia de forma responsável e criativa.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Projeto sobre Técnicas Computacionais - Refletindo sobre a Inteligência Artificial na Escola</p>
+            <p>Desenvolvido por [Seu Nome] - [Ano]</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">TW</a>
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="LinkedIn">LN</a>
+            </div>
+        </div>
+    </footer>
+</body>
+                  </html>
